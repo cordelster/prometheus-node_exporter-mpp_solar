@@ -3,4 +3,4 @@ Allows collection of data from solar inverters and providing the data directly t
 
 ### Requires:
 * Prometheus node_exporter
-* python mpp_solar
+* python mpp_solar https://github.com/jblance/mpp-solar
