@@ -1,0 +1,13 @@
+[Unit]
+Description=Node Exporter mpp solar collector
+Wants=mpp_solar.service
+After=network.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter --no-collector.mdadm --collector.textfile.directory=/var/lib/node_exporter-mpp_solar
+
+[Install]
+WantedBy=multi-user.target
